@@ -402,24 +402,24 @@ class adduser_module
 		$max = strlen($lowercase) - 1;
 		for ($x = 0; $x < abs($length/3); $x++)
 		{
-			$pword_string .= $lowercase{mt_rand(0, $max)};
+			$pword_string .= $lowercase[mt_rand(0, $max)];
 		}
 		$max = strlen($uppercase) - 1;
 		for ($x = 0; $x < abs($length/3); $x++)
 		{
-			$pword_string .= $uppercase{mt_rand(0, $max)};
+			$pword_string .= $uppercase[mt_rand(0, $max)];
 		}
 		$max = strlen($numbers) - 1;
 		for ($x = 0; $x < abs($length/3); $x++)
 		{
-			$pword_string .= $numbers{mt_rand(0, $max)};
+			$pword_string .= $numbers[mt_rand(0, $max)];
 		}
 		if ($type == 'PASS_TYPE_SYMBOL')
 		{
 			$max = strlen($specialcharacters) - 1;
 			for ($x = 0; $x < abs($length/3); $x++)
 			{
-				$pword_string .= $specialcharacters{mt_rand(0, $max)};
+				$pword_string .= $specialcharacters[mt_rand(0, $max)];
 			}
 		}
 
